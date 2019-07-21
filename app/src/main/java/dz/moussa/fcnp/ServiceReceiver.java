@@ -13,7 +13,8 @@ public class ServiceReceiver extends BroadcastReceiver {
         MyPhoneStateListener phoneListener = new MyPhoneStateListener(context);
         telephony = (TelephonyManager) context
                 .getSystemService(Context.TELEPHONY_SERVICE);
-        telephony.listen(phoneListener, PhoneStateListener.LISTEN_CALL_STATE);
+        //telephony.listen(phoneListener, PhoneStateListener.LISTEN_CALL_STATE);
+        telephony.listen(phoneListener, PhoneStateListener.LISTEN_CALL_FORWARDING_INDICATOR);
     }
 
     public void onDestroy() {

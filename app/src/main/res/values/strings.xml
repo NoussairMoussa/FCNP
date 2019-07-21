@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FCNP</string>
+    <string name="channel_name">forward_call_notif</string>
+    <string name="channel_description">notify the user that the call is a forwarded call</string>
+    <string name="notif_title">Forwarded call</string>
+    <string name="notif_content">This is a Forwarded call </string>
 </resources>
